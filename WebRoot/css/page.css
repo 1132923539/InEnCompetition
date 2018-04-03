@@ -1,0 +1,53 @@
+.section-second-paging{
+    padding: 30px 10px;
+}
+.second-paging-btn{
+    display: inline-block;
+    vertical-align: middle;
+}
+.second-paging-btn button{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 12px;
+    line-height: 21px;
+    cursor: pointer;
+}
+.second-paging-btn1 button{
+    background-color: #99D5FF;
+    width: 75px;
+    height: 35px;
+
+    color: #ffffff;
+}
+.second-paging-btn1 button:hover{
+    background-color: #B6E1FF;
+}
+.second-paging-btn2 button{
+    border: gainsboro solid 1px;
+    width: 75px;
+    height: 35px;
+
+    color: #656565;
+}
+.second-paging-btn2 button:hover,
+.second-paging-btn3 button:hover{
+    background-color: gainsboro;
+}
+.second-paging-btn3 button{
+    border: gainsboro solid 1px;
+    width: 40px;
+    height: 35px;
+
+    color: #656565;
+}
+.second-paging-btn3 input{
+    border: gainsboro solid 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 0 5px;
+    width: 30px;
+    height: 35px;
+}

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<!-- <classPathEntry location="D:\jar\ojdbc14.jar" /> -->
+	<classPathEntry location="F:\jar\ojdbc14.jar" />
+
+	<context id="FreeCMS_Tables" targetRuntime="MyBatis3">
+
+		<!-- mysql配置 -->
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://127.0.0.1:3306/competition" userId="root"
+			password="123456">
+		</jdbcConnection>
+
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<!-- model生成文件的存放位置 -->
+		<javaModelGenerator targetPackage="com.bs.competition.entity.simple"
+			targetProject="InEnCompetition">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<!-- sqlmap生成文件的存放位置 -->
+		<sqlMapGenerator targetPackage="mybaties"
+			targetProject="InEnCompetition">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<!-- dao生成文件的存放位置 -->
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.bs.competition.dao.inf" targetProject="InEnCompetition"
+			implementationPackage="com.bs.competition.dao.impl">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+		<!-- 要生成的表 -->
+		<table tableName="student" domainObjectName="Student"
+			enableCountByExample="true" enableUpdateByExample="true"
+			enableDeleteByExample="true" enableSelectByExample="true"
+			selectByExampleQueryId="false">
+			<generatedKey column="id"
+				sqlStatement="select upper(replace(uuid(),'-',''));" />
+		</table>
+		<!-- <table tableName="admin" domainObjectName="Admin"
+			enableCountByExample="true" enableUpdateByExample="true"
+			enableDeleteByExample="true" enableSelectByExample="true"
+			selectByExampleQueryId="false">
+			<generatedKey column="id"
+				sqlStatement="select upper(replace(uuid(),'-',''));" />
+		</table>
+		
+		<table tableName="teacher" domainObjectName="Teacher"
+			enableCountByExample="true" enableUpdateByExample="true"
+			enableDeleteByExample="true" enableSelectByExample="true"
+			selectByExampleQueryId="false">
+			<generatedKey column="id"
+				sqlStatement="select upper(replace(uuid(),'-',''));" />
+		</table>
+		
+		<table tableName="student" domainObjectName="Student"
+			enableCountByExample="true" enableUpdateByExample="true"
+			enableDeleteByExample="true" enableSelectByExample="true"
+			selectByExampleQueryId="false">
+			<generatedKey column="id"
+				sqlStatement="select upper(replace(uuid(),'-',''));" />
+		</table>
+
+		<table tableName="user" domainObjectName="User"
+			enableCountByExample="true" enableUpdateByExample="true"
+			enableDeleteByExample="true" enableSelectByExample="true"
+			selectByExampleQueryId="false">
+			<generatedKey column="id"
+				sqlStatement="select upper(replace(uuid(),'-',''));" />
+		</table>
+		
+		<table tableName="school" domainObjectName="School"
+			enableCountByExample="true" enableUpdateByExample="true"
+			enableDeleteByExample="true" enableSelectByExample="true"
+			selectByExampleQueryId="false">
+			<generatedKey column="id"
+				sqlStatement="select upper(replace(uuid(),'-',''));" />
+		</table>
+ 		
+		<table tableName="files" domainObjectName="Files"
+			enableCountByExample="true" enableUpdateByExample="true"
+			enableDeleteByExample="true" enableSelectByExample="true"
+			selectByExampleQueryId="false">
+			<generatedKey column="id"
+				sqlStatement="select upper(replace(uuid(),'-',''));" />
+		</table>
+	
+		<table tableName="score" domainObjectName="Score"
+			enableCountByExample="true" enableUpdateByExample="true"
+			enableDeleteByExample="true" enableSelectByExample="true"
+			selectByExampleQueryId="false">
+			<generatedKey column="id"
+				sqlStatement="select upper(replace(uuid(),'-',''));" />
+		</table>
+		
+		<table tableName="news" domainObjectName="News"
+			enableCountByExample="true" enableUpdateByExample="true"
+			enableDeleteByExample="true" enableSelectByExample="true"
+			selectByExampleQueryId="false">
+			<generatedKey column="id"
+				sqlStatement="select upper(replace(uuid(),'-',''));" />
+		</table>
+		
+		<table tableName="stuApply" domainObjectName="StuApply"
+			enableCountByExample="true" enableUpdateByExample="true"
+			enableDeleteByExample="true" enableSelectByExample="true"
+			selectByExampleQueryId="false">
+			<generatedKey column="id"
+				sqlStatement="select upper(replace(uuid(),'-',''));" />
+		</table>
+
+		<table tableName="image" domainObjectName="Image"
+			enableCountByExample="true" enableUpdateByExample="true"
+			enableDeleteByExample="true" enableSelectByExample="true"
+			selectByExampleQueryId="false">
+			<generatedKey column="id"
+				sqlStatement="select upper(replace(uuid(),'-',''));" />
+		</table> 
+		 -->
+	</context>
+</generatorConfiguration>

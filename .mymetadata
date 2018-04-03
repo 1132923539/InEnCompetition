@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="InEnCompetition"
+  id="myeclipse.1458980235369"
+  context-root="/InEnCompetition"
+  j2ee-spec="5.0"
+  archive="InEnCompetition.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
